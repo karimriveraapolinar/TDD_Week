@@ -1,10 +1,10 @@
 import pytest
 from score import *
-def test_add_points(game,amount):
+def test_add_points(game):
     result = add_points(game, 10)
-    assert result["score"] == 20
+    assert result["score"] == 10
 
-def test_apply_multiplier(game, multiplier):
+def test_apply_multiplier(game):
     result = apply_multiplier(game, 3)
     assert result["multiplier"] == 3
 

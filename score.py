@@ -5,7 +5,7 @@ def add_points(game, amount):
         return game
     else:
         game["score"] += (amount * game["multiplier"])
-        return
+        return game
 
 def apply_multiplier(game, multiplier):
     if multiplier < 1:
