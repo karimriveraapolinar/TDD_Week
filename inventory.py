@@ -1,5 +1,12 @@
 def add_item(inventory, item):
-    pass
+    if not item:
+        raise ValueError("Item name cannot be empty")
+    if len(inventory["items"]) == inventory["capacity"]:
+        raise ValueError("No room left in inventory")
+    if inventory["locked"]:
+        return inventory
+    inventory["items"].append(item)
+    return inventory
 
 def remove_item(inventory, item):
     if item not in inventory["items"]:
