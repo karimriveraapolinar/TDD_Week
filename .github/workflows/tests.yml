@@ -24,4 +24,4 @@ jobs:
 
 
       - name: Run flake8
-        run: flake8 .nder=85
+        run: flake8 .
