@@ -8,6 +8,7 @@ def add_item(inventory, item):
     inventory["items"].append(item)
     return inventory
 
+
 def remove_item(inventory, item):
     if item not in inventory["items"]:
         raise ValueError("That item isn't in your inventory")
@@ -15,6 +16,7 @@ def remove_item(inventory, item):
         return inventory
     inventory["items"].pop(inventory["items"].index(item))
     return inventory
+
 
 def get_item_count(inventory):
     return len(inventory["items"])
