@@ -1,5 +1,5 @@
 import pytest
-from score import add_points, apply_multiplier, reset_score, is_high_score
+from score import add_points, apply_multiplier, reset_score, is_hi
 
 
 def test_add_points_works(game):
